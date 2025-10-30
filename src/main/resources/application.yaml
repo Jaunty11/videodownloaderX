@@ -1,0 +1,14 @@
+github:
+  oauth:
+    client-id: Ov23libXDS4HtOaW81WL""
+
+videodownloader:
+  rate-limit:
+    delay-ms: 500
+  download:
+    output-dir: ${user.home}/Downloads/VideoDownloader
+
+quarkus:
+  application:
+    name: videodownloaderx
+    version: 1.0.0
