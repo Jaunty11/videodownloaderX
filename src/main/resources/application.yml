@@ -1,0 +1,23 @@
+github:
+  oauth:
+    # REPLACE THIS with your actual GitHub OAuth Client ID
+    client-id: "Ov23libXDS4HtOaW81WL"
+
+spring:
+  main:
+    banner-mode: off
+    web-application-type: none
+
+logging:
+  level:
+    root: OFF
+    com.videodownloader.videodownloader: INFO
+
+videodownloader:
+  rate-limit:
+    delay-ms: 500
+    max-concurrent: 2
+  download:
+    max-requests: 5
+    # Auto-creates directory if doesn't exist
+    output-dir: ${user.home}/Downloads/VideoDownloader
